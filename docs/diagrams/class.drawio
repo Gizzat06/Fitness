@@ -1,0 +1,218 @@
+<mxfile host="Electron">
+  <diagram name="Страница-1" id="2ItQUMbIkqC_JNVlAuPr">
+    <mxGraphModel dx="1717" dy="1057" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="" mermaidData="{&#xa;  &quot;data&quot;: &quot;classDiagram\ndirection TB\n\nclass Пайдаланушы {\n    +int id\n    +String аты\n    +String телефон\n    +String email\n    +String құпияСөз\n    +String рөл\n    +тіркелу()\n    +кіру()\n    +рөлТаңдау()\n}\n\nclass Абонемент {\n    +int id\n    +String түрі\n    +Date басталуКүні\n    +Date аяқталуКүні\n    +String күйі\n    +тексеру()\n}\n\nclass ВиртуалдыКезек {\n    +int id\n    +DateTime уақыт\n    +int кезекНөмірі\n    +String күйі\n    +кезеккеТұру()\n    +кезектенШығу()\n}\n\nclass Тренажер {\n    +int id\n    +String атауы\n    +String түрі\n    +String күйі\n    +күйінТексеру()\n}\n\nclass АқауӨтінімі {\n    +int id\n    +String сипаттама\n    +DateTime құрылғанУақыт\n    +String күйі\n    +өтінімЖасау()\n    +күйінӨзгерту()\n}\n\nПайдаланушы \&quot;1\&quot; --&gt; \&quot;0..*\&quot; Абонемент : иеленеді\nПайдаланушы \&quot;1\&quot; --&gt; \&quot;0..*\&quot; ВиртуалдыКезек : кезекке тұрады\nПайдаланушы \&quot;1\&quot; --&gt; \&quot;0..*\&quot; АқауӨтінімі : хабарлайды\n\nВиртуалдыКезек \&quot;0..*\&quot; --&gt; \&quot;1\&quot; Тренажер : қатысты\nАқауӨтінімі \&quot;0..*\&quot; --&gt; \&quot;1\&quot; Тренажер : қатысты&quot;,&#xa;  &quot;config&quot;: null&#xa;}" id="3CsD6mQCJCjR5TAoeeSV-1">
+          <mxCell connectable="0" parent="1" style="group;transparentBounds=1;editIcon=1;lockedGroup=0;groupPadding=10;" vertex="1">
+            <mxGeometry as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;b&gt;Пайдаланушы&lt;/b&gt;" mermaidId="n:Пайдаланушы" mermaidBaseStyle="swimlane;html=1;fontStyle=1;fontSize=16;align=center;verticalAlign=middle;horizontal=1;childLayout=stackLayout;startSize=48;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginTop=12;marginBottom=12;stackSpacing=0;swimlaneFillColor=light-dark(#ECECFF,#1f2020);whiteSpace=wrap;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" mermaidBaseValue="&lt;b&gt;Пайдаланушы&lt;/b&gt;" id="3CsD6mQCJCjR5TAoeeSV-2">
+          <mxCell parent="3CsD6mQCJCjR5TAoeeSV-1" style="swimlane;html=1;fontStyle=1;fontSize=16;align=center;verticalAlign=middle;horizontal=1;childLayout=stackLayout;startSize=48;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginTop=12;marginBottom=12;stackSpacing=0;swimlaneFillColor=light-dark(#ECECFF,#1f2020);whiteSpace=wrap;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" vertex="1">
+            <mxGeometry height="312" width="201" x="288" y="30" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-3" parent="3CsD6mQCJCjR5TAoeeSV-2" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="+int БірегейНөмір" vertex="1">
+          <mxGeometry height="24" width="201" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-4" parent="3CsD6mQCJCjR5TAoeeSV-2" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="+String Аты" vertex="1">
+          <mxGeometry height="24" width="201" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-5" parent="3CsD6mQCJCjR5TAoeeSV-2" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="+String Телефон" vertex="1">
+          <mxGeometry height="24" width="201" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-6" parent="3CsD6mQCJCjR5TAoeeSV-2" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="+String Пошта" vertex="1">
+          <mxGeometry height="24" width="201" y="132" as="geometry" />
+        </mxCell>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-7" parent="3CsD6mQCJCjR5TAoeeSV-2" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="+String ҚұпияСөз" vertex="1">
+          <mxGeometry height="24" width="201" y="156" as="geometry" />
+        </mxCell>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-8" parent="3CsD6mQCJCjR5TAoeeSV-2" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="+String Рөл" vertex="1">
+          <mxGeometry height="24" width="201" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-9" parent="3CsD6mQCJCjR5TAoeeSV-2" style="line;strokeWidth=1;fillColor=none;spacingLeft=3;spacingRight=3;rotatable=0;points=[];strokeColor=inherit;" vertex="1">
+          <mxGeometry height="24" width="201" y="204" as="geometry" />
+        </mxCell>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-10" parent="3CsD6mQCJCjR5TAoeeSV-2" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="+Тіркелу()" vertex="1">
+          <mxGeometry height="24" width="201" y="228" as="geometry" />
+        </mxCell>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-11" parent="3CsD6mQCJCjR5TAoeeSV-2" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="+Кіру()" vertex="1">
+          <mxGeometry height="24" width="201" y="252" as="geometry" />
+        </mxCell>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-12" parent="3CsD6mQCJCjR5TAoeeSV-2" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="+РөлТаңдау()" vertex="1">
+          <mxGeometry height="24" width="201" y="276" as="geometry" />
+        </mxCell>
+        <UserObject label="&lt;b&gt;Абонемент&lt;/b&gt;" mermaidId="n:Абонемент" mermaidBaseStyle="swimlane;html=1;fontStyle=1;fontSize=16;align=center;verticalAlign=middle;horizontal=1;childLayout=stackLayout;startSize=48;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginTop=12;marginBottom=12;stackSpacing=0;swimlaneFillColor=light-dark(#ECECFF,#1f2020);whiteSpace=wrap;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" mermaidBaseValue="&lt;b&gt;Абонемент&lt;/b&gt;" id="3CsD6mQCJCjR5TAoeeSV-13">
+          <mxCell parent="3CsD6mQCJCjR5TAoeeSV-1" style="swimlane;html=1;fontStyle=1;fontSize=16;align=center;verticalAlign=middle;horizontal=1;childLayout=stackLayout;startSize=48;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginTop=12;marginBottom=12;stackSpacing=0;swimlaneFillColor=light-dark(#ECECFF,#1f2020);whiteSpace=wrap;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" vertex="1">
+            <mxGeometry height="240" width="202" x="30" y="416" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-14" parent="3CsD6mQCJCjR5TAoeeSV-13" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="+int БірегейНөмір" vertex="1">
+          <mxGeometry height="24" width="202" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-15" parent="3CsD6mQCJCjR5TAoeeSV-13" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="+String Түрі" vertex="1">
+          <mxGeometry height="24" width="202" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-16" parent="3CsD6mQCJCjR5TAoeeSV-13" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="+Date БасталуКүні" vertex="1">
+          <mxGeometry height="24" width="202" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-17" parent="3CsD6mQCJCjR5TAoeeSV-13" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="+Date АяқталуКүні" vertex="1">
+          <mxGeometry height="24" width="202" y="132" as="geometry" />
+        </mxCell>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-18" parent="3CsD6mQCJCjR5TAoeeSV-13" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="+String Күйі" vertex="1">
+          <mxGeometry height="24" width="202" y="156" as="geometry" />
+        </mxCell>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-19" parent="3CsD6mQCJCjR5TAoeeSV-13" style="line;strokeWidth=1;fillColor=none;spacingLeft=3;spacingRight=3;rotatable=0;points=[];strokeColor=inherit;" vertex="1">
+          <mxGeometry height="24" width="202" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-20" parent="3CsD6mQCJCjR5TAoeeSV-13" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="+Тексеру()" vertex="1">
+          <mxGeometry height="24" width="202" y="204" as="geometry" />
+        </mxCell>
+        <UserObject label="&lt;b&gt;ВиртуалдыКезек&lt;/b&gt;" mermaidId="n:ВиртуалдыКезек" mermaidBaseStyle="swimlane;html=1;fontStyle=1;fontSize=16;align=center;verticalAlign=middle;horizontal=1;childLayout=stackLayout;startSize=48;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginTop=12;marginBottom=12;stackSpacing=0;swimlaneFillColor=light-dark(#ECECFF,#1f2020);whiteSpace=wrap;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" mermaidBaseValue="&lt;b&gt;ВиртуалдыКезек&lt;/b&gt;" id="3CsD6mQCJCjR5TAoeeSV-21">
+          <mxCell parent="3CsD6mQCJCjR5TAoeeSV-1" style="swimlane;html=1;fontStyle=1;fontSize=16;align=center;verticalAlign=middle;horizontal=1;childLayout=stackLayout;startSize=48;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginTop=12;marginBottom=12;stackSpacing=0;swimlaneFillColor=light-dark(#ECECFF,#1f2020);whiteSpace=wrap;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" vertex="1">
+            <mxGeometry height="240" width="213" x="282" y="416" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-22" parent="3CsD6mQCJCjR5TAoeeSV-21" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="+int БірегейНөмір" vertex="1">
+          <mxGeometry height="24" width="213" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-23" parent="3CsD6mQCJCjR5TAoeeSV-21" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="+DateTime Уақыт" vertex="1">
+          <mxGeometry height="24" width="213" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-24" parent="3CsD6mQCJCjR5TAoeeSV-21" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="+int КезекНөмірі" vertex="1">
+          <mxGeometry height="24" width="213" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-25" parent="3CsD6mQCJCjR5TAoeeSV-21" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="+String Күйі" vertex="1">
+          <mxGeometry height="24" width="213" y="132" as="geometry" />
+        </mxCell>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-26" parent="3CsD6mQCJCjR5TAoeeSV-21" style="line;strokeWidth=1;fillColor=none;spacingLeft=3;spacingRight=3;rotatable=0;points=[];strokeColor=inherit;" vertex="1">
+          <mxGeometry height="24" width="213" y="156" as="geometry" />
+        </mxCell>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-27" parent="3CsD6mQCJCjR5TAoeeSV-21" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="+КезеккеТұру()" vertex="1">
+          <mxGeometry height="24" width="213" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-28" parent="3CsD6mQCJCjR5TAoeeSV-21" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="+КезектенШығу()" vertex="1">
+          <mxGeometry height="24" width="213" y="204" as="geometry" />
+        </mxCell>
+        <UserObject label="&lt;b&gt;Тренажер&lt;/b&gt;" mermaidId="n:Тренажер" mermaidBaseStyle="swimlane;html=1;fontStyle=1;fontSize=16;align=center;verticalAlign=middle;horizontal=1;childLayout=stackLayout;startSize=48;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginTop=12;marginBottom=12;stackSpacing=0;swimlaneFillColor=light-dark(#ECECFF,#1f2020);whiteSpace=wrap;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" mermaidBaseValue="&lt;b&gt;Тренажер&lt;/b&gt;" id="3CsD6mQCJCjR5TAoeeSV-29">
+          <mxCell parent="3CsD6mQCJCjR5TAoeeSV-1" style="swimlane;html=1;fontStyle=1;fontSize=16;align=center;verticalAlign=middle;horizontal=1;childLayout=stackLayout;startSize=48;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginTop=12;marginBottom=12;stackSpacing=0;swimlaneFillColor=light-dark(#ECECFF,#1f2020);whiteSpace=wrap;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" vertex="1">
+            <mxGeometry height="216" width="182" x="430" y="780" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-30" parent="3CsD6mQCJCjR5TAoeeSV-29" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="+int БірегейНөмір" vertex="1">
+          <mxGeometry height="24" width="182" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-31" parent="3CsD6mQCJCjR5TAoeeSV-29" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="+String Атауы" vertex="1">
+          <mxGeometry height="24" width="182" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-32" parent="3CsD6mQCJCjR5TAoeeSV-29" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="+String Түрі" vertex="1">
+          <mxGeometry height="24" width="182" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-33" parent="3CsD6mQCJCjR5TAoeeSV-29" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="+String Күйі" vertex="1">
+          <mxGeometry height="24" width="182" y="132" as="geometry" />
+        </mxCell>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-34" parent="3CsD6mQCJCjR5TAoeeSV-29" style="line;strokeWidth=1;fillColor=none;spacingLeft=3;spacingRight=3;rotatable=0;points=[];strokeColor=inherit;" vertex="1">
+          <mxGeometry height="24" width="182" y="156" as="geometry" />
+        </mxCell>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-35" parent="3CsD6mQCJCjR5TAoeeSV-29" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="+КүйінТексеру()" vertex="1">
+          <mxGeometry height="24" width="182" y="180" as="geometry" />
+        </mxCell>
+        <UserObject label="&lt;b&gt;АқауӨтінімі&lt;/b&gt;" mermaidId="n:АқауӨтінімі" mermaidBaseStyle="swimlane;html=1;fontStyle=1;fontSize=16;align=center;verticalAlign=middle;horizontal=1;childLayout=stackLayout;startSize=48;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginTop=12;marginBottom=12;stackSpacing=0;swimlaneFillColor=light-dark(#ECECFF,#1f2020);whiteSpace=wrap;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" mermaidBaseValue="&lt;b&gt;АқауӨтінімі&lt;/b&gt;" id="3CsD6mQCJCjR5TAoeeSV-36">
+          <mxCell parent="3CsD6mQCJCjR5TAoeeSV-1" style="swimlane;html=1;fontStyle=1;fontSize=16;align=center;verticalAlign=middle;horizontal=1;childLayout=stackLayout;startSize=48;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginTop=12;marginBottom=12;stackSpacing=0;swimlaneFillColor=light-dark(#ECECFF,#1f2020);whiteSpace=wrap;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" vertex="1">
+            <mxGeometry height="240" width="267" x="545" y="416" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-37" parent="3CsD6mQCJCjR5TAoeeSV-36" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="+int БірегейНөмір" vertex="1">
+          <mxGeometry height="24" width="267" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-38" parent="3CsD6mQCJCjR5TAoeeSV-36" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="+String Сипаттама" vertex="1">
+          <mxGeometry height="24" width="267" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-39" parent="3CsD6mQCJCjR5TAoeeSV-36" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="+DateTime ҚұрылғанУақыт" vertex="1">
+          <mxGeometry height="24" width="267" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-40" parent="3CsD6mQCJCjR5TAoeeSV-36" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="+String Күйі" vertex="1">
+          <mxGeometry height="24" width="267" y="132" as="geometry" />
+        </mxCell>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-41" parent="3CsD6mQCJCjR5TAoeeSV-36" style="line;strokeWidth=1;fillColor=none;spacingLeft=3;spacingRight=3;rotatable=0;points=[];strokeColor=inherit;" vertex="1">
+          <mxGeometry height="24" width="267" y="156" as="geometry" />
+        </mxCell>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-42" parent="3CsD6mQCJCjR5TAoeeSV-36" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="+ӨтінімЖасау()" vertex="1">
+          <mxGeometry height="24" width="267" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-43" parent="3CsD6mQCJCjR5TAoeeSV-36" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="+КүйінӨзгерту()" vertex="1">
+          <mxGeometry height="24" width="267" y="204" as="geometry" />
+        </mxCell>
+        <UserObject label="иеленеді" mermaidId="e:Пайдаланушы-&gt;Абонемент#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=classic;endSize=9;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#ECECFF,#1f2020);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.74;entryX=0.5;entryY=0;" mermaidBaseValue="иеленеді" id="3CsD6mQCJCjR5TAoeeSV-44">
+          <mxCell edge="1" parent="3CsD6mQCJCjR5TAoeeSV-1" source="3CsD6mQCJCjR5TAoeeSV-2" style="curved=1;startArrow=none;endArrow=classic;endSize=9;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#ECECFF,#1f2020);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.74;entryX=0.5;entryY=0;rounded=0;" target="3CsD6mQCJCjR5TAoeeSV-13">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="160" y="380" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-45" parent="3CsD6mQCJCjR5TAoeeSV-44" style="edgeLabel;resizable=0;labelBackgroundColor=none;fontSize=11;spacing=8;align=right;verticalAlign=top;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-1" as="geometry" />
+        </mxCell>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-46" parent="3CsD6mQCJCjR5TAoeeSV-44" style="edgeLabel;resizable=0;labelBackgroundColor=none;fontSize=11;spacing=8;align=left;verticalAlign=bottom;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="1" as="geometry" />
+        </mxCell>
+        <UserObject label="кезекке тұрады" mermaidId="e:Пайдаланушы-&gt;ВиртуалдыКезек#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=classic;endSize=9;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#ECECFF,#1f2020);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="кезекке тұрады" id="3CsD6mQCJCjR5TAoeeSV-47">
+          <mxCell edge="1" parent="3CsD6mQCJCjR5TAoeeSV-1" source="3CsD6mQCJCjR5TAoeeSV-2" style="curved=1;startArrow=none;endArrow=classic;endSize=9;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#ECECFF,#1f2020);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="3CsD6mQCJCjR5TAoeeSV-21">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-48" parent="3CsD6mQCJCjR5TAoeeSV-47" style="edgeLabel;resizable=0;labelBackgroundColor=none;fontSize=11;spacing=8;align=right;verticalAlign=top;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-1" as="geometry" />
+        </mxCell>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-49" parent="3CsD6mQCJCjR5TAoeeSV-47" style="edgeLabel;resizable=0;labelBackgroundColor=none;fontSize=11;spacing=8;align=left;verticalAlign=bottom;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="1" as="geometry" />
+        </mxCell>
+        <UserObject label="хабарлайды" mermaidId="e:Пайдаланушы-&gt;АқауӨтінімі#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=classic;endSize=9;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#ECECFF,#1f2020);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.71;entryX=0.5;entryY=0;" mermaidBaseValue="хабарлайды" id="3CsD6mQCJCjR5TAoeeSV-50">
+          <mxCell edge="1" parent="3CsD6mQCJCjR5TAoeeSV-1" source="3CsD6mQCJCjR5TAoeeSV-2" style="curved=1;startArrow=none;endArrow=classic;endSize=9;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#ECECFF,#1f2020);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.71;entryX=0.5;entryY=0;rounded=0;" target="3CsD6mQCJCjR5TAoeeSV-36">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-51" parent="3CsD6mQCJCjR5TAoeeSV-50" style="edgeLabel;resizable=0;labelBackgroundColor=none;fontSize=11;spacing=8;align=left;verticalAlign=top;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-1" as="geometry" />
+        </mxCell>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-52" parent="3CsD6mQCJCjR5TAoeeSV-50" style="edgeLabel;resizable=0;labelBackgroundColor=none;fontSize=11;spacing=8;align=right;verticalAlign=bottom;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="1" as="geometry" />
+        </mxCell>
+        <UserObject label="қатысты" mermaidId="e:ВиртуалдыКезек-&gt;Тренажер#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=classic;endSize=9;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#ECECFF,#1f2020);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0;entryY=0.08;" mermaidBaseValue="қатысты" id="3CsD6mQCJCjR5TAoeeSV-53">
+          <mxCell edge="1" parent="3CsD6mQCJCjR5TAoeeSV-1" source="3CsD6mQCJCjR5TAoeeSV-21" style="curved=1;startArrow=none;endArrow=classic;endSize=9;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#ECECFF,#1f2020);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.25;entryY=0;rounded=0;entryDx=0;entryDy=0;exitDx=0;exitDy=0;" target="3CsD6mQCJCjR5TAoeeSV-29">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-54" parent="3CsD6mQCJCjR5TAoeeSV-53" style="edgeLabel;resizable=0;labelBackgroundColor=none;fontSize=11;spacing=8;align=right;verticalAlign=top;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="-1" as="geometry" />
+        </mxCell>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-55" parent="3CsD6mQCJCjR5TAoeeSV-53" style="edgeLabel;resizable=0;labelBackgroundColor=none;fontSize=11;spacing=8;align=left;verticalAlign=bottom;" value="1" vertex="1">
+          <mxGeometry relative="1" x="1" as="geometry" />
+        </mxCell>
+        <UserObject label="қатысты" mermaidId="e:АқауӨтінімі-&gt;Тренажер#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=classic;endSize=9;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#ECECFF,#1f2020);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=1;entryY=0.08;" mermaidBaseValue="қатысты" id="3CsD6mQCJCjR5TAoeeSV-56">
+          <mxCell edge="1" parent="3CsD6mQCJCjR5TAoeeSV-1" source="3CsD6mQCJCjR5TAoeeSV-36" style="curved=1;startArrow=none;endArrow=classic;endSize=9;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#ECECFF,#1f2020);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.75;entryY=0;rounded=0;entryDx=0;entryDy=0;" target="3CsD6mQCJCjR5TAoeeSV-29">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-57" parent="3CsD6mQCJCjR5TAoeeSV-56" style="edgeLabel;resizable=0;labelBackgroundColor=none;fontSize=11;spacing=8;align=right;verticalAlign=top;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="-1" as="geometry" />
+        </mxCell>
+        <mxCell id="3CsD6mQCJCjR5TAoeeSV-58" parent="3CsD6mQCJCjR5TAoeeSV-56" style="edgeLabel;resizable=0;labelBackgroundColor=none;fontSize=11;spacing=8;align=left;verticalAlign=bottom;" value="1" vertex="1">
+          <mxGeometry relative="1" x="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
