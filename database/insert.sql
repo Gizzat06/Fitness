@@ -1,6 +1,6 @@
-INSERT INTO Paidalanushy
+insert into Paidalanushy
 (aty, telefon, poshta, kupiyaSoz, rol)
-VALUES
+values
 (N'Гиззат Балдиров', N'87765332665', N'gizzatbaldirov@gmail.kz', N'giz123', N'Клиент'),
 (N'Айдана Серік', N'87711817102', N'aidana@mail.kz', N'aid123', N'Клиент'),
 (N'Нұржан Әлиев', N'87078234709', N'nurzhan@mail.kz', N'nur123', N'Клиент'),
@@ -11,22 +11,20 @@ VALUES
 (N'Алина Маратова', N'87761714712', N'alina@mail.kz', N'ali456', N'Жаттықтырушы'),
 (N'Ерлан Қайрат', N'87071596435', N'erlan@mail.kz', N'erl123', N'Әкімші'),
 (N'Руслан Саматов', N'87774282791', N'ruslan@mail.kz', N'rus123', N'Сервистік инженер');
-GO
 
-INSERT INTO Abonement
+insert into Abonement
 (turi, bastaluKuni, ayaqtaluKuni, kuyi, paidalanushy_id)
-VALUES
+values
 (N'Айлық', '2026-10-01', '2026-10-31', N'Белсенді', 1),
 (N'3 айлық', '2026-09-01', '2026-12-01', N'Белсенді', 2),
 (N'Айлық', '2026-10-05', '2026-11-05', N'Белсенді', 3),
 (N'Жылдық', '2026-01-01', '2027-01-01', N'Белсенді', 4),
 (N'Айлық', '2026-09-01', '2026-10-01', N'Аяқталған', 5),
 (N'6 айлық', '2026-07-01', '2027-01-01', N'Белсенді', 6);
-GO
 
-INSERT INTO Trenazher
+insert into Trenazher
 (atauy, turi, kuyi)
-VALUES
+values
 (N'Жүгіру жолы №1', N'Кардио', N'Бос'),
 (N'Жүгіру жолы №2', N'Кардио', N'Бос'),
 (N'Велотренажер №1', N'Кардио', N'Бос'),
@@ -37,23 +35,21 @@ VALUES
 (N'Турник', N'Күштік', N'Бос'),
 (N'Смит машинасы', N'Күштік', N'Бос'),
 (N'Кроссовер', N'Күштік', N'Жөндеуде');
-GO
 
-INSERT INTO VirtualdyKezek
+insert into VirtualdyKezek
 (uaqyt, kezekNomiri, kuyi, paidalanushy_id, trenazher_id)
-VALUES
+values
 ('2026-10-07T10:00:00', 1, N'Күтуде', 1, 1),
 ('2026-10-07T10:30:00', 2, N'Күтуде', 2, 1),
 ('2026-10-07T11:00:00', 1, N'Күтуде', 3, 4),
 ('2026-10-07T12:00:00', 1, N'Аяқталды', 4, 5),
 ('2026-10-07T13:30:00', 1, N'Күтуде', 5, 3),
 ('2026-10-07T14:00:00', 1, N'Күтуде', 6, 9);
-GO
 
-INSERT INTO AqauOtinimi
+insert into AqauOtinimi
 (sipattama, qurylganUaqyt, kuyi,
  paidalanushy_id, trenazher_id)
-VALUES
+values
 (N'Тренажер қосылмайды',
  '2026-10-06T10:20:00',
  N'Жөндеуде', 1, 6),
@@ -69,4 +65,3 @@ VALUES
 (N'Жылдамдық батырмасы жұмыс істемейді',
  '2026-10-07T11:40:00',
  N'Жаңа', 5, 1);
-GO
