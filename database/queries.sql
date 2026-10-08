@@ -1,13 +1,13 @@
-SELECT * FROM Paidalanushy;
-SELECT * FROM Abonement;
-SELECT * FROM Trenazher;
-SELECT * FROM VirtualdyKezek;
-SELECT * FROM AqauOtinimi;
-GO
+select * from Paidalanushy;
+select * from Abonement;
+select * from Trenazher;
+select * from VirtualdyKezek;
+select * from AqauOtinimi;
+go
 
-UPDATE Abonement
-SET kuyi = N'Аяқталған'
-WHERE id = 2
+update Abonement
+set kuyi = N'Аяқталған'
+where id = 2
 
-DELETE FROM Abonement
-WHERE id = 6
+delete from Abonement
+where id = 6

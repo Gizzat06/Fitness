@@ -1,75 +1,67 @@
-CREATE DATABASE FitnessCenter;
-GO
+create database FitnessCenter;
+go
+use FitnessCenter;
+go
 
-USE FitnessCenter;
-GO
-
-CREATE TABLE Paidalanushy (
-    id INT IDENTITY(1,1) PRIMARY KEY,
-    aty NVARCHAR(100) NOT NULL,
-    telefon NVARCHAR(20),
-    poshta NVARCHAR(100),
-    kupiyaSoz NVARCHAR(100) NOT NULL,
-    rol NVARCHAR(50) NOT NULL
+create table Paidalanushy (
+id int identity(1,1) primary key,
+aty nvarchar(100) not null,
+telefon nvarchar(20),
+poshta nvarchar(100),
+kupiyaSoz nvarchar(100) not null,
+rol nvarchar(50) not null
 );
-GO
+go
 
-CREATE TABLE Abonement (
-    id INT IDENTITY(1,1) PRIMARY KEY,
-    turi NVARCHAR(50) NOT NULL,
-    bastaluKuni DATE NOT NULL,
-    ayaqtaluKuni DATE NOT NULL,
-    kuyi NVARCHAR(30),
-    paidalanushy_id INT NOT NULL,
-
-    CONSTRAINT FK_Abonement_Paidalanushy
-    FOREIGN KEY (paidalanushy_id)
-    REFERENCES Paidalanushy(id)
+create table Abonement (
+id int identity(1,1) primary key,
+turi nvarchar(50) not null,
+bastaluKuni date not null,
+ayaqtaluKuni date not null,
+kuyi nvarchar(30),
+paidalanushy_id int not null,
+constraint FK_Abonement_Paidalanushy
+foreign key (paidalanushy_id)
+references Paidalanushy(id)
 );
-GO
+go
 
-CREATE TABLE Trenazher (
-    id INT IDENTITY(1,1) PRIMARY KEY,
-    atauy NVARCHAR(100) NOT NULL,
-    turi NVARCHAR(50),
-    kuyi NVARCHAR(30)
+create table Trenazher (
+id int identity(1,1) primary key,
+atauy nvarchar(100) not null,
+turi nvarchar(50),
+kuyi nvarchar(30)
 );
-GO
+go
 
-CREATE TABLE VirtualdyKezek (
-    id INT IDENTITY(1,1) PRIMARY KEY,
-    uaqyt DATETIME2 NOT NULL,
-    kezekNomiri INT,
-    kuyi NVARCHAR(30),
-
-    paidalanushy_id INT NOT NULL,
-    trenazher_id INT NOT NULL,
-
-    CONSTRAINT FK_Kezek_Paidalanushy
-    FOREIGN KEY (paidalanushy_id)
-    REFERENCES Paidalanushy(id),
-
-    CONSTRAINT FK_Kezek_Trenazher
-    FOREIGN KEY (trenazher_id)
-    REFERENCES Trenazher(id)
+create table VirtualdyKezek (
+id int identity(1,1) primary key,
+uaqyt datetime2 not null,
+kezekNomiri int,
+kuyi nvarchar(30),
+paidalanushy_id int not null,
+trenazher_id int not null,
+constraint FK_Kezek_Paidalanushy
+foreign key (paidalanushy_id)
+references Paidalanushy(id),
+constraint FK_Kezek_Trenazher
+foreign key (trenazher_id)
+references Trenazher(id)
 );
-GO
+go
 
-CREATE TABLE AqauOtinimi (
-    id INT IDENTITY(1,1) PRIMARY KEY,
-    sipattama NVARCHAR(255) NOT NULL,
-    qurylganUaqyt DATETIME2 NOT NULL,
-    kuyi NVARCHAR(30),
-
-    paidalanushy_id INT NOT NULL,
-    trenazher_id INT NOT NULL,
-
-    CONSTRAINT FK_Aqau_Paidalanushy
-    FOREIGN KEY (paidalanushy_id)
-    REFERENCES Paidalanushy(id),
-
-    CONSTRAINT FK_Aqau_Trenazher
-    FOREIGN KEY (trenazher_id)
-    REFERENCES Trenazher(id)
+create table AqauOtinimi (
+id int identity(1,1) primary key,
+sipattama nvarchar(255) not null,
+qurylganUaqyt datetime2 not null,
+kuyi nvarchar(30),
+paidalanushy_id int not null,
+trenazher_id int not null,
+constraint FK_Aqau_Paidalanushy
+foreign key (paidalanushy_id)
+references Paidalanushy(id),
+constraint FK_Aqau_Trenazher
+foreign key (trenazher_id)
+references Trenazher(id)
 );
-GO
+go
