@@ -1,0 +1,160 @@
+<mxfile host="Electron">
+  <diagram name="Страница-1" id="ny2PliHm1U46PLnn3III">
+    <mxGraphModel dx="1857" dy="1803" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="wUsdOJi8yJ5oghf2Itqn-1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 16px;&quot;&gt;Клиент&lt;/font&gt;" vertex="1">
+          <mxGeometry height="100" width="60" x="20" y="64" as="geometry" />
+        </mxCell>
+        <mxCell id="wUsdOJi8yJ5oghf2Itqn-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 16px;&quot;&gt;Зал жүктемесін тексеру&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="-100" y="-125" as="geometry" />
+        </mxCell>
+        <mxCell id="wUsdOJi8yJ5oghf2Itqn-3" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Турникет арқылы залға кіру&lt;/span&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="-160" y="-6" as="geometry" />
+        </mxCell>
+        <mxCell id="wUsdOJi8yJ5oghf2Itqn-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;; font-size: 16px;&quot;&gt;Тренажер ақауын хабарлау&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="-190" y="104" as="geometry" />
+        </mxCell>
+        <mxCell id="wUsdOJi8yJ5oghf2Itqn-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Жеке прогресс пен тарихты көру&lt;/span&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="70" width="150" x="-190" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="wUsdOJi8yJ5oghf2Itqn-6" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Ақау өтінімдерін өңдеу&lt;/span&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="160" x="520" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="wUsdOJi8yJ5oghf2Itqn-7" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Сервистік инженер&lt;/span&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="100" width="60" x="374" y="175" as="geometry" />
+        </mxCell>
+        <mxCell id="wUsdOJi8yJ5oghf2Itqn-19" edge="1" parent="1" source="wUsdOJi8yJ5oghf2Itqn-3" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="wUsdOJi8yJ5oghf2Itqn-2" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&amp;lt;&amp;lt;include&amp;gt;&amp;gt;&lt;/span&gt;&lt;/font&gt;">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="320" y="150" as="sourcePoint" />
+            <mxPoint x="480" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wUsdOJi8yJ5oghf2Itqn-21" edge="1" parent="1" source="wUsdOJi8yJ5oghf2Itqn-4" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="wUsdOJi8yJ5oghf2Itqn-3" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;&lt;/span&gt;&lt;/font&gt;">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="254" y="260" as="sourcePoint" />
+            <mxPoint x="414" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wUsdOJi8yJ5oghf2Itqn-23" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Әкімші&lt;/span&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="100" width="60" x="460" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="wUsdOJi8yJ5oghf2Itqn-24" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Жаттықтырушы&lt;/span&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="100" width="60" x="200" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="wUsdOJi8yJ5oghf2Itqn-25" edge="1" parent="1" source="wUsdOJi8yJ5oghf2Itqn-24" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;" target="wUsdOJi8yJ5oghf2Itqn-1" value="Extends">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="-140" y="203.5" as="sourcePoint" />
+            <mxPoint x="20" y="203.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wUsdOJi8yJ5oghf2Itqn-26" edge="1" parent="1" source="wUsdOJi8yJ5oghf2Itqn-1" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.673;entryY=0.96;entryDx=0;entryDy=0;entryPerimeter=0;" target="wUsdOJi8yJ5oghf2Itqn-2" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="90" y="140" as="sourcePoint" />
+            <mxPoint x="250" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wUsdOJi8yJ5oghf2Itqn-28" edge="1" parent="1" source="wUsdOJi8yJ5oghf2Itqn-1" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" target="wUsdOJi8yJ5oghf2Itqn-3" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="140" y="195" as="sourcePoint" />
+            <mxPoint x="290" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wUsdOJi8yJ5oghf2Itqn-29" edge="1" parent="1" source="wUsdOJi8yJ5oghf2Itqn-1" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" target="wUsdOJi8yJ5oghf2Itqn-4" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="140" y="285" as="sourcePoint" />
+            <mxPoint x="290" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wUsdOJi8yJ5oghf2Itqn-30" edge="1" parent="1" source="wUsdOJi8yJ5oghf2Itqn-1" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" target="wUsdOJi8yJ5oghf2Itqn-5" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="130" y="310" as="sourcePoint" />
+            <mxPoint x="240" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wUsdOJi8yJ5oghf2Itqn-31" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Тренажерға виртуалды кезекке тұру&lt;/span&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="70" width="140" x="-70" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="wUsdOJi8yJ5oghf2Itqn-32" edge="1" parent="1" source="wUsdOJi8yJ5oghf2Itqn-1" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.401;entryY=0.046;entryDx=0;entryDy=0;entryPerimeter=0;" target="wUsdOJi8yJ5oghf2Itqn-31" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="-20" y="220" as="sourcePoint" />
+            <mxPoint x="178" y="478" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wUsdOJi8yJ5oghf2Itqn-33" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Жұмыс кестесін көру / клиенттер тізімін көру&lt;/span&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="140" x="260" y="-20" as="geometry" />
+        </mxCell>
+        <mxCell id="wUsdOJi8yJ5oghf2Itqn-35" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Клиенттердің қатысуын белгілеу&lt;/span&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="70" width="160" x="80" y="-70" as="geometry" />
+        </mxCell>
+        <mxCell id="wUsdOJi8yJ5oghf2Itqn-36" edge="1" parent="1" source="wUsdOJi8yJ5oghf2Itqn-24" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.566;entryY=1.009;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.323;exitY=0.034;exitDx=0;exitDy=0;exitPerimeter=0;" target="wUsdOJi8yJ5oghf2Itqn-35" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="-20" y="270" as="sourcePoint" />
+            <mxPoint x="11" y="369" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wUsdOJi8yJ5oghf2Itqn-37" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Тұтынушыларды тіркеу/абонементтерді басқару&lt;/span&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="90" width="160" x="370" y="-140" as="geometry" />
+        </mxCell>
+        <mxCell id="wUsdOJi8yJ5oghf2Itqn-38" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Топтық жаттығулар кестесін жасау&lt;/span&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="160" x="540" y="-100" as="geometry" />
+        </mxCell>
+        <mxCell id="wUsdOJi8yJ5oghf2Itqn-39" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Төлемдерді/келу статистикасын қадағалау&lt;/span&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="160" x="610" as="geometry" />
+        </mxCell>
+        <mxCell id="wUsdOJi8yJ5oghf2Itqn-40" edge="1" parent="1" source="wUsdOJi8yJ5oghf2Itqn-23" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.581;entryY=1.02;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" target="wUsdOJi8yJ5oghf2Itqn-37" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="350" y="100" as="sourcePoint" />
+            <mxPoint x="381" y="199" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wUsdOJi8yJ5oghf2Itqn-41" edge="1" parent="1" source="wUsdOJi8yJ5oghf2Itqn-23" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.071;entryY=0.79;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.657;exitY=0.034;exitDx=0;exitDy=0;exitPerimeter=0;" target="wUsdOJi8yJ5oghf2Itqn-38" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="549" y="75" as="sourcePoint" />
+            <mxPoint x="500" y="50" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wUsdOJi8yJ5oghf2Itqn-42" edge="1" parent="1" source="wUsdOJi8yJ5oghf2Itqn-23" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.044;entryY=0.688;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.767;exitY=0.36;exitDx=0;exitDy=0;exitPerimeter=0;" target="wUsdOJi8yJ5oghf2Itqn-39" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="559" y="155" as="sourcePoint" />
+            <mxPoint x="510" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wUsdOJi8yJ5oghf2Itqn-43" edge="1" parent="1" source="wUsdOJi8yJ5oghf2Itqn-7" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.018;entryY=0.708;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.53;exitY=0.646;exitDx=0;exitDy=0;exitPerimeter=0;" target="wUsdOJi8yJ5oghf2Itqn-6" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="440" y="240" as="sourcePoint" />
+            <mxPoint x="527" y="289" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ECSiaZ7b2GriCm7Ola-E-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Ақау өтінімдерін жөндеу&lt;/span&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="160" x="510" y="255" as="geometry" />
+        </mxCell>
+        <mxCell id="ECSiaZ7b2GriCm7Ola-E-3" edge="1" parent="1" source="wUsdOJi8yJ5oghf2Itqn-23" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.376;entryY=0.003;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.523;exitY=0.666;exitDx=0;exitDy=0;exitPerimeter=0;" target="wUsdOJi8yJ5oghf2Itqn-6" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="610" y="234" as="sourcePoint" />
+            <mxPoint x="648" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ECSiaZ7b2GriCm7Ola-E-4" edge="1" parent="1" source="wUsdOJi8yJ5oghf2Itqn-7" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.049;entryY=0.253;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.81;exitY=0.862;exitDx=0;exitDy=0;exitPerimeter=0;" target="ECSiaZ7b2GriCm7Ola-E-1" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="420" y="514" as="sourcePoint" />
+            <mxPoint x="458" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ECSiaZ7b2GriCm7Ola-E-6" edge="1" parent="1" source="wUsdOJi8yJ5oghf2Itqn-24" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.233;entryY=0.898;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.643;exitY=0.024;exitDx=0;exitDy=0;exitPerimeter=0;" target="wUsdOJi8yJ5oghf2Itqn-33" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="270" y="260" as="sourcePoint" />
+            <mxPoint x="347" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ECSiaZ7b2GriCm7Ola-E-7" edge="1" parent="1" source="wUsdOJi8yJ5oghf2Itqn-23" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.964;entryY=0.697;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.263;exitY=0.174;exitDx=0;exitDy=0;exitPerimeter=0;" target="wUsdOJi8yJ5oghf2Itqn-33" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="383" y="-29" as="sourcePoint" />
+            <mxPoint x="460" y="-30" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
