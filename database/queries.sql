@@ -3,6 +3,9 @@ select * from Abonement;
 select * from Trenazher;
 select * from VirtualdyKezek;
 select * from AqauOtinimi;
+select * from Tolem;
+select * from JattyguSabagy;
+select * from SabakkaJazylu;
 
 update Abonement
 set kuyi = N'Аяқталған'
